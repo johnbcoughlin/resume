@@ -1,0 +1,2 @@
+pdflatex resume.tex
+open resume.pdf

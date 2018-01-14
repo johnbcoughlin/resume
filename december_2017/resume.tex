@@ -1,0 +1,126 @@
+%-------------------------
+% Resume in Latex
+% Author : Jack Coughlin
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage[letterpaper, margin=0.8in]{geometry}
+\pagestyle{empty}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{tgpagella}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+%-------------------------------------------
+%%%%%%  CONTENT STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+
+\begin{center}
+  {\LARGE \textbf{Jack Coughlin}} \
+
+  Master's of Science in Applied Mathematics, Fall 2018
+  \vspace{3mm}
+
+  75 Noe Street\ \ \textbullet\ \
+  San Francisco, CA
+
+  (206) 245-0838\ \ \textbullet\ \
+  johnbcoughlin@gmail.com
+\end{center}
+
+%-----------EXPERIENCE-----------------
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+\begin{itemize}
+  \item
+    \headerrow
+      {\textbf{Inscriptive, Inc.}}
+      {\textbf{San Francisco, CA}}
+    \headerrow
+      {\emph{Member of Technical Staff}}
+      {\emph{2016--2017}}
+    \begin{itemize}
+      \item
+        Developed a standalone anomaly detection service for server monitoring, backed by a new anomaly detection algorithm for time series data, combining Discrete Wavelet analysis with Kernel Density Estimation.
+      \item
+        Contributed to the creation of a consumer product for inferential statistics on business data.
+        Led the integration of statistical techniques into the product as well as key technical implementation and design decisions.
+      \item
+        Created a high-performance microservices application framework in Java, using gRPC and Kubernetes.
+    \end{itemize}
+  \item
+    \headerrow
+      {\textbf{Square, Inc.}}
+      {\textbf{San Francisco, CA}}
+    \headerrow
+      {\emph{Software Engineer}}
+      {\emph{2013--2016}}
+    \begin{itemize}
+      \item
+        As part of the Payments team, developed and maintained business-critical Java applications that move millions of dollars daily.
+      \item
+        Contributed to the development of an automatic reconciliation engine for Square's payment and settlement systems.
+    \end{itemize}
+\end{itemize}
+
+%-----------EDUCATION-----------------
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+\begin{itemize}
+  \item
+    \headerrow
+      {\textbf{University of Washington}}
+      {\textbf{Seattle, WA}}
+    \headerrow
+      {\emph{College of Arts and Science}}
+      {\emph{2008--2013}}
+    \begin{itemize}
+      \item B.S. in Mathematics, \emph{magna cum laude}
+      \item B.A. in Comparative History of Ideas, \emph{magna cum laude}
+  \end{itemize}
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Publications}
+\begin{itemize}
+  \item
+    Multi-scale Anomaly Detection with Wavelets. Jack Coughlin and Gian Perrone, Proceedings of Big Data/Internet of Things. London, UK, 2017.
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Skills}
+\begin{indentsection}{\parindent}
+  \begin{description*}
+    \item[Web Development:] Java, Javascript, HTML, CSS, React, Angular
+    \item[Infrastructure:] MySQL, bash, Google Cloud Platform, Kubernetes, gRPC
+    \item[Scientific Computing:] Python, Numpy, R, ggplot2, \LaTeX
+  \end{description*}
+\end{indentsection}
+
+\end{document}
